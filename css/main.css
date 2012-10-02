@@ -21,6 +21,9 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    color: #4d4547;
+    -webkit-font-smoothing: subpixel-antialiased;
+
 }
 
 /*
@@ -87,122 +90,6 @@ textarea {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/*Colours
- --------
- #F5D236 Yellow
- #DF532D Red
-
-*/
-
-
-p {
-    font-size: 0.938em;
-}
-
-
-
-ul, li {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
- 
-.wrapper {
-    margin: 0 auto;
-    max-width: 61.500em;
-    position: relative;
-    text-align: center;
-}
-
-
-h1,h2,h3,h4,h5,h6,p {
-    padding: 0;
-    margin: 0;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    text-transform: uppercase;
-    font-weight: normal;
-}
-
-h1 {
-    text-transform: uppercase;
-    top: 0px;
-}
-
-.event-details {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-}
-
-a {
-    text-decoration: none; 
-}
-
-#upcoming-event{
-    background-color: #4D4547;
-}
-
-#upcoming-event .event-number {
-    font-size: 322px;
-    color: #F5D236;
-    text-align: center;
-    display: block;
-}
-
-#main-image {
-    max-width: 100%;
-}
-
-.event-number {
-    font-size: 322px;
-    line-height: 1em;   
-}
-
-#speakers {
-    text-align: center;
-}
-
-#speakers h2 {
-    color: #DF532D;
-}
-
-#speakers #keynotes h2 {
-    font-size: 4.125em;
-    line-height: 1em;
-}
-
-#speakers #microslots h2 {
-    font-size: 2em;
-}
-
-#speakers li {
-    padding-bottom: 1.125em;
-}
-
-#about {
-    background-color: #DE522C;
-    color: #fff;
-    padding: 1.500em 0;
-}
-
-#about p {
-    
-}
-
-#past-events {
-    background-color: #4C4446;
-    color: #fff;
-    padding: 1.500em 0;
 }
 
 /* ==========================================================================
@@ -306,6 +193,242 @@ a {
     *zoom: 1;
 }
 
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*Colours
+ --------
+ #F5D236 Yellow
+ #DF532D Red
+
+*/
+
+
+.league {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 0.938em;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+ 
+.wrapper {
+    margin: 0 auto;
+    max-width: 61.500em;
+    position: relative;
+    text-align: center;
+}
+
+
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h1 {
+    text-transform: uppercase;
+    top: 0px;
+}
+
+.event-details {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    text-decoration: none; 
+}
+
+#upcoming-event{
+    background-color: #4D4547;
+}
+
+#upcoming-event .event-number {
+    font-size: 322px;
+    color: #F5D236;
+    text-align: center;
+    display: block;
+}
+
+#main-image {
+    max-width: 100%;
+}
+
+.event-number {
+    font-size: 322px;
+    line-height: 1em;   
+}
+
+#speakers {
+    text-align: center;
+}
+
+#speakers h2 {
+    color: #DF532D;
+}
+
+#speakers #keynotes h2 {
+    font-size: 4.125em;
+    line-height: 1em;
+}
+
+#speakers #microslots h2 {
+    font-size: 2em;
+}
+
+#speakers ul {
+    padding-top: 1.125em;
+}
+
+#speakers li {
+    padding-bottom: 1.125em;
+}
+
+#about {
+    background-color: #DE522C;
+    color: #fff;
+    padding: 1.500em 0;
+}
+
+.button-fat {
+    background-color: #2dc5f4;
+    color: #fff;
+    padding: 0.125em 0.375em;
+    -moz-border-radius: 0.125em;
+    -webkit-border-radius: 0.125em;
+    border-radius: 0.125em;
+    font-size: 3.000em;
+    display: inline-block;
+    margin-bottom: 0.125em;
+    text-transform: uppercase;
+}
+
+.button, input type="submit" {
+    background-color: #2dc5f4;
+    color: #fff;
+    padding: 0.125em 0.375em;
+    -moz-border-radius: 0.125em;
+    -webkit-border-radius: 0.125em;
+    border-radius: 0.125em;
+    font-size: 3.000em;
+    display: inline-block;
+    margin-bottom: 0.125em;
+    text-transform: uppercase;
+}
+
+.link-fat {
+    color: #2dc5f4;
+    font-size: 3.000em;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1em;
+}
+
+#past-events {
+    background-color: #4C4446;
+    color: #fff;
+}
+
+#venue, #lanyrd, #sponsor, #keynotes, #microslots{
+    border-bottom: 1px dotted #ccc;
+    max-width: 30em;
+    margin: 0 auto;
+    padding: 0.750em;
+}
+
+#connect {
+    background-color: #edeced;
+    padding: 0.750em 0;
+}
+
+#connect a {
+    color: #2ec6f5;
+}
+
+#connect li {
+    display: inline-block;
+    padding: 2%;
+    border-right: 1px dotted #ccc;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+#hastag {
+    font-size: 6em;
+    text-transform: uppercase;
+}
+
+#speak {
+    font-size: 1.875em;
+    text-transform: uppercase;
+    margin-top: 0.375em;
+}
+
+#speak a{
+    color: #4d4547;
+}
+
+#newsletter {
+    margin: 0.750em;
+    display: block;
+}
+
+#past-events {
+    padding: 0.75em;
+}
+
+#past-events h2{
+    font-size: 4.125em;    
+}
+
+#past-events a{
+    color: #2ec6f5;
+    padding: 0.750em;
+    display: block;
+}
+
+#past-events .event-number{ 
+    display: block;
+}
+
+#past-events ul{
+    font-size: 0;
+    overflow: hidden;
+    text-align: left;
+
+}
+
+#past-events li{
+    font-size: 16px;
+    width: 100%;
+    background-color: #fff;
+    display: inline-block;
+    color: #4d4547;
+    text-align: center;
+    margin-bottom: 0.75em;
+}
+
+.speaker {
+    font-size: 1.6em;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.
@@ -314,6 +437,21 @@ a {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
+#past-events {
+    padding: 0;
+}
+
+#past-events li{
+    width: 30%;
+    margin-left:3.3%;
+    margin-bottom: 3.3%;
+}
+
+#past-events ul{
+    margin-left:-3.3%;
+}
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
