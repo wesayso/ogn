@@ -23,7 +23,7 @@
     <section id="upcoming-event">
         
             <div class="event-details">
-                <div><a href="http://www.torchbox.com" target="_blank">Torchbox</a></div>
+                <a href="http://www.torchbox.com" target="_blank" class="tbx-link">Torchbox</a>
                 <h1>Oxford Geek Night</h1>
                 <h1 class="event-number">#28</h1>
                 <div class="date-time league">
@@ -185,7 +185,7 @@
 <script src="js/jquery.fittext.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $(".event-number").fitText(0.45)
+            $(".event-number").fitText(0.45, { minFontSize: '150px', maxFontSize: '320px' })
         });
     </script>
 

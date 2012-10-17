@@ -205,6 +205,15 @@ textarea {
 
 */
 
+a:link,
+a:visited {
+	color: #2ec6f5;	
+}
+
+a:hover,
+a:active {
+	color: #1aa9d5;
+}
 
 .league {
     text-transform: uppercase;
@@ -242,6 +251,21 @@ h1 {
     text-transform: uppercase;
     top: 0px;
     font-size: 3em;
+}
+
+.tbx-link { 
+	text-indent: -9999%;
+	height: 28px;
+	width: 120px;
+	display: inline-block;
+	background: transparent	url(../images/torchbox-sprite.png) top left no-repeat;
+	background-size: 120px 66px;
+	text-align: center;
+	margin: 0 auto 1em;
+}
+
+.tbx-link:hover {
+	background-position-y: -37px;
 }
 
 .event-details {
@@ -303,9 +327,16 @@ a {
     text-align: center;
 }
 
-#speakers h2 {
+#speakers a:link,
+#speakers a:visited {
     color: #DF532D;
 }
+
+#speakers a:hover,
+#speaker a:active {
+    color: #c03510;
+}
+
 
 #speakers #keynotes h2 {
     font-size: 4.125em;
@@ -330,6 +361,31 @@ a {
     padding: 1.500em 0;
 }
 
+input {
+    font-size: 0.750em;
+    width: 100%;
+    border: none;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    padding: 1em;
+    margin-bottom: 0.75em;
+    vertical-align: top;
+}
+
+.button, input[type="submit"]{
+    background-color: #2dc5f4;
+    color: #fff;
+    font-size: 1.313em;
+    -moz-border-radius: 0.125em;
+    -webkit-border-radius: 0.125em;
+    text-transform: uppercase;
+    padding: .28em .5em;
+    -webkit-transition: .10s background ease-in-out;
+
+}
+
+a.button-fat,
 .button-fat {
     background-color: #2dc5f4;
     color: #fff;
@@ -341,32 +397,14 @@ a {
     display: inline-block;
     margin-bottom: 0.125em;
     text-transform: uppercase;
+    -webkit-transition: .10s background ease-in-out;
 }
 
-
-input {
-    font-size: 0.750em;
-    width: 100%;
-    border: none;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-    padding: 0.750em;
-    margin-bottom: 0.750em;
-    vertical-align: top;
+.button:hover, input[type="submit"]:hover,
+.button-fat:hover {
+	background-color: #1aa9d5;
+	-webkit-transition: .10s background ease-in-out;
 }
-
-.button, input[type="submit"]{
-    background-color: #2dc5f4;
-    color: #fff;
-    font-size: 1.313em;
-    -moz-border-radius: 0.125em;
-    -webkit-border-radius: 0.125em;
-    text-transform: uppercase;
-    padding: 4px 8px;
-}
-
-
 
 .link-fat {
     color: #2dc5f4;
@@ -375,6 +413,13 @@ input {
     padding: 0px;
     margin: 0px;
     line-height: 1em;
+    -webkit-transition: .10s color ease-in-out;
+}
+
+.link-fat:hover {
+	color: #1aa9d5;
+	-webkit-transition: .10s color ease-in-out;
+
 }
 
 #past-events {
@@ -394,9 +439,6 @@ input {
     padding: 0.750em 0;
 }
 
-#connect a {
-    color: #2ec6f5;
-}
 
 #connect li {
     display: inline-block;
@@ -434,17 +476,28 @@ input {
     font-size: 4.125em;    
 }
 
-#past-events a{
+#past-events li a {
     color: #2ec6f5;
     padding: 0.750em;
     display: block;
+    -webkit-transition: .10s color ease-in-out;
+        background-color: #fff;
+    background-color: rgba(255,255,255,0.95);
+
+}
+
+#past-events li a:hover {
+	color: #1aa9d5;
+	-webkit-transition: .10s color ease-in-out;
+		 background-color: rgba(255,255,255,1);
+
 }
 
 #past-events .event-number{ 
     display: block;
 }
 
-#past-events ul{
+#past-events ul {
     font-size: 0;
     overflow: hidden;
     text-align: left;
@@ -452,16 +505,16 @@ input {
 
 }
 
-#past-events li{
+#past-events li {
     font-size: 16px;
     width: 100%;
-    background-color: #fff;
     display: inline-block;
     color: #4d4547;
     text-align: center;
     margin-bottom: 0.75em;
     vertical-align: top;
 }
+
 
 .speaker {
     font-size: 2.5em;
